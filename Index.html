@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rad Dev | Junior Developer</title>
+    <meta name="description" content="Rad Dev — Junior developer specializing in website development, game development and PC optimization. Available for hire.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+</head>
+
+<body>
+
+<header class="header">
+    <a href="#home" class="logo">
+        Rad <span>Dev</span>
+    </a>
+
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>   
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="gradient-button">Contact me</button>
+</header>
+
+<section class="home" id="home">    
+    <div class="home-content">
+        <h1>Hi, I'm <span>Rad</span></h1>
+        <h3>I'm a <span>Junior Developer</span></h3>
+
+        <p>
+            A passionate junior developer with experience in creating dynamic web applications and indie games.
+            I enjoy solving problems and building practical, clean solutions.
+        </p>
+
+        <div class="social-icons">
+            <a href="https://github.com/raddev1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="bx bxl-github"></i>
+            </a>
+
+            <a href="https://discord.com/users/809781780827078677" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                <i class="bx bxl-discord"></i>
+            </a>
+
+            <a href="https://www.instagram.com/jaqqov_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="bx bxl-instagram-alt"></i>
+            </a>
+
+            <a href="https://www.paypal.com/paypalme/AuraFarmer24" target="_blank" rel="noopener noreferrer" aria-label="PayPal">
+                <i class="bx bxl-paypal"></i>
+            </a>
+        </div>
+
+        <div class="btn-group">
+            <a href="#contact" class="btn hire-btn">Hire</a>
+            <a href="#contact" class="btn">Contact</a>
+        </div>
+    </div>
+
+    <div class="home-image">
+        <img src="image.png" alt="Portrait of Rad Dev" loading="lazy">
+    </div>
+</section>
+
+
+<div id="hire-popup" class="hire-popup">
+    <div class="hire-box">
+        <span class="close-btn">&times;</span>
+
+        <h2>Let me work for you</h2>
+        <p class="hire-subtext">
+            Tell me what you need — I’ll review it and get back to you within 24 hours.
+        </p>
+
+        <p class="hire-note">
+            You only pay after the project is completed and when you’re satisfied.
+        </p>
+
+        <div class="price-card" data-plan="Basic">
+            <h3>Basic</h3>
+            <p>Simple Project (5–10 days)</p>
+            <span>€15</span>
+        </div>
+
+        <div class="price-card" data-plan="Standard">
+            <h3>Standard</h3>
+            <p>Standard Project (20+ days)</p>
+            <span>€30</span>
+        </div>
+
+        <div class="price-card" data-plan="Premium">
+            <h3>Premium</h3>
+            <p>Advanced project (1–3 months)</p>
+            <span>€50</span>
+        </div>
+
+        <form id="hire-form" action="https://formspree.io/f/mpqkdprl" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <input type="hidden" name="plan" id="selected-plan" value="Basic">
+            <input type="hidden" name="form_type" value="Hire Request">
+            <input type="hidden" name="_subject" value="New Hire Request">
+
+            <textarea name="details" placeholder="Describe your project..." required></textarea>
+
+            <p class="hire-footer">
+                No upfront payment • No obligation
+            </p>
+
+            <button type="submit" class="btn">Send Request</button>
+        </form>
+    </div>
+</div>
+
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="image2.jpg" alt="About Rad Dev" loading="lazy">
+    </div>
+
+    <div class="about-content">
+        <h2>About <span>Me</span></h2>
+
+        <p>
+            I'm a junior developer who enjoys building modern, responsive websites and small web applications.
+            I focus on clean design, smooth user experience, and reliable code.
+            I've worked on personal projects where I practiced turning ideas into real, functional websites and programs.
+            I'm constantly learning and improving to deliver better results with every project.
+        </p>
+
+        <a href="#" class="btn">Read More</a>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h2 class="heading">Services</h2>
+
+    <div class="services-container">
+
+        <div class="services-box">
+            <div class="services-info">
+                <i class="bx bx-code-alt"></i>
+                <h4>Website Development</h4>
+                <p>
+                    I build modern, responsive websites that work on all devices with clean design and fast performance.
+                </p>
+            </div>
+        </div>
+
+        <div class="services-box">
+            <div class="services-info">
+                <i class="bx bxs-joystick"></i>
+                <h4>Game Development</h4>
+                <p>
+                    I create small games and interactive experiences with smooth gameplay and solid performance.
+                </p>
+            </div>
+        </div>
+
+        <div class="services-box">
+            <div class="services-info">
+                <i class="bx bx-tachometer"></i>
+                <h4>PC Performance Optimization</h4>
+                <p>
+                    I improve system speed and responsiveness by optimizing startup, cleaning processes, and fixing issues.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <h6>Projects coming soon.</h6>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form id="contact-form" action="https://formspree.io/f/mpqkdprl" method="POST">
+        <div class="input-group">
+
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-box">
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <input type="text" name="subject" placeholder="Subject">
+            </div>
+
+        </div>
+
+        <div class="input-group-2">
+            <textarea name="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </div>
+    </form>
+
+    <div id="status-message" class="status-message">
+        <i id="status-icon" class='bx'></i>
+        <h3 id="status-title"></h3>
+        <p id="status-text"></p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="social-icons">
+        <a href="https://github.com/raddev1" target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="https://discord.com/users/809781780827078677" target="_blank"><i class="bx bxl-discord"></i></a>
+        <a href="https://www.instagram.com/jaqqov_/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="https://www.paypal.com/paypalme/AuraFarmer24" target="_blank"><i class="bx bxl-paypal"></i></a>
+    </div>
+
+    <ul class="list">
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <p class="copyright">
+        © Rad Dev ︱ All Rights Reserved
+    </p>
+</footer>
+
+<script src="jscript.js"></script>
+
+</body>
+</html>
